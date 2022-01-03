@@ -1,0 +1,18 @@
+:root{
+/* Color styles */
+--vert: rgba(145, 177, 8, 1);
+--blanc-maquette: rgba(242, 242, 242, 1);
+--gris: rgba(211, 215, 217, 1);
+--noir: rgba(1, 1, 1, 1);
+--couleur-typographie: rgba(90, 91, 91, 1);
+--couleur-noi--typographie: rgba(5, 6, 7, 1);
+--rouge: rgba(193, 130, 92, 1);
+
+/* Text-size styles */
+--texte-footer: 10px;
+--paragraphe: 13px;
+--titre: 20px;
+--grand-titre: 35px;
+--titre-article: 16px;
+--sous-titr--article: 18px;
+}
