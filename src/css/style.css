@@ -8,8 +8,15 @@
 @import "utils/variables.css";
 
 /* Base */
+@import "base/main.css";
 
 /* Layout */
+@import "layout/a_propos.css";
+@import "layout/articles.css";
+@import "layout/contact.css";
+@import "layout/footer.css";
+@import "layout/header.css";
+@import "layout/index.css";
 
 /* Components */
 @import "components/menu.css";
