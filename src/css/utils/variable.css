@@ -15,4 +15,9 @@
 --grand-titre: 35px;
 --titre-article: 16px;
 --sous-titr--article: 18px;
+
+/* Polices de caractère */
+--font-playfairdisplay: 'playfair display';
+--font-open-sans: 'open sans';
 }
+
