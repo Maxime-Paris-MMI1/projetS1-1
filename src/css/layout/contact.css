@@ -1,0 +1,51 @@
+.contact{
+    background-color: var(--gris);
+    padding: 20px;
+}
+
+
+.titre_formulaire{
+    margin-left: -30px;
+}
+
+.text__formulaire{
+    font-family: var(--font-open-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 37px;
+
+}
+
+.rectangle__formulaire{
+    height: 36px;
+    margin-left: 33px;
+    margin-bottom: 33px;
+    margin-top: 5px;
+    width: 88%;
+    border: none;
+    color: var(--blanc-maquette);
+}
+
+#dernier__rectangle{
+    height: 154px;
+}
+
+.bouton__envoyer{
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-image: url(../../../public/img/rectangle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+
+}
