@@ -9,34 +9,32 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!--Menu hamburger + titre du site-->
-        <div>
+        <div class="header__titre">
             <h1>
                 <a href="/">Complé(te)ment différents</a>
             </h1>
-        </div>
-        <div>
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar"></span>
-            </button>
-        </div>
+        </div>>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar"></span>
+        </button>
         <!--Menu-->
-        <nav class="menu">
-            <ul>
-                <li><a href="premier_article.html">Savages le film</a></li>
-                <li><a href="troisieme_article.html">Savages le réalisateur</a></li>
-                <li><a href="deuxieme_article.html">Savages le livre</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
+        <nav class="header__menu menu">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="premier_article.html">Savages le film</a></li>
+                <li class="menu__item"><a class="menu__link" href="troisieme_article.html">Savages le réalisateur</a></li>
+                <li class="menu__item"><a class="menu__link" href="deuxieme_article.html">Savages le livre</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <div>
-                <h2>SAVAGES, LE LIVRE</h2>
-                <p>
+            <div class="article_start">
+                <h2 class="article_start__titre">SAVAGES, LE LIVRE</h2>
+                <p class="article_start__intro">
                     Le roman a été écrit par Don Winslow et est
                     disponible dans les librairies Américaines
                     depuis 2010. Il a été écrit dans l’optique d’être
@@ -45,15 +43,15 @@
                     racontant le passé des trois protagonistes
                 </p>
             </div>
-            <figure>
+            <figure class="premiere_image__article">
                 <img src="public/img/2__homme__qui__discute.jpg" alt="2 homme qui discutent à la plage">
                 <figcaption>Ben, Chon © Savages, 2012</figcaption>
             </figure>
         </section>
         <section>
-            <div>
-                <h2>Un cartel pas comme les autres</h2>
-                <p>
+            <div class="premiere_partie_article2">
+                <h3 class="sous_titre_article">Un cartel pas comme les autres</h3>
+                <p class="texte_article">
                     On ne va pas se mentir, lorsque l’on parle de cartel
                     de drogue au cinéma, nous avons tendance à
                     imaginer un homme moustachu bourru et amoureux
@@ -72,8 +70,8 @@
                     d’originalité, cela est souvent signe d’une oeuvre de
                     qualité.
                 </p>
-                <h2>Deux amis très différents</h2>
-                <p>
+                <h3 class="sous_titre_article">Deux amis très différents</h3>
+                <p class="texte_article">
                     Chon est un ex militaire violent et encore choqué de
                     son expérience de la guerre, tandis que Ben est un
                     botaniste pacifiste ayant créé une association
@@ -88,17 +86,17 @@
                     complémentaires.
                 </p>
             </div>
-            <div>
-                <img src="public/img/19279_200_2.jpg" alt="appostrophe">
-                <blockquote>
+            <div class="deuxieme_partie_article2">
+                <img class="appostrophe" src="public/img/19279_200_2.jpg" alt="appostrophe">
+                <blockquote class="citation">
                     « O aime dire qu’ensemble,
                     Ben et Chon ne forment qu’un
                     seul homme au complet. »
                 </blockquote>
             </div>
-            <div>
-                <h2>La complémentarité des protagonistes</h2>
-                <p>
+            <div class="troisieme_partie_article2">
+                <h3 class="sous_titre_article">La complémentarité des protagonistes</h3>
+                <p class="texte_article">
                     L’un ne sera jamais sans l’autre et inversement. O
                     aime dire qu’ensemble, Ben et Chon ne forment
                     qu’un seul homme au complet et, dans le film, elle
@@ -112,12 +110,12 @@
             </div>
         </section>
         <section>
-            <div>
-                <h3>EXTRAIT DE L’OEUVRE</h3>
-                <h3>Version française</h3>
+            <div class="quatrieme_partie_article2">
+                <h3 class="sous_titre_article">EXTRAIT DE L’OEUVRE</h3>
+                <h3 class="sous_titre_article">Version française</h3>
             </div>
-            <div>
-                <blockquote>
+            <div class="cinquieme_partie_article2">
+                <blockquote class="citation">
                     " Nous proclamons la liberté de tout individu,
                     avons acheté et conduit des millions de
                     voitures pour le prouver, construit des routes
@@ -156,9 +154,9 @@
                     Finalement, ce n’était pas assez. "
                 </blockquote>
             </div>
-            <h3>Version originale</h3>
-            <div>
-                <blockquote>
+            <h3 class="sous_titre_article">Version originale</h3>
+            <div class="sixieme_partie_article2">
+                <blockquote class="citation">
                     “We proclaimed the freedom of the individual,
                     bought and drove millions of cars to prove it,
                     built more roads for the cars to drive on so we
@@ -191,9 +189,9 @@
             </div>
         </section>
         <section>
-            <div>
-                <h3>SAVAGES, L’AUTEUR</h3>
-                <p>
+            <div class="septieme_partie_article2">
+                <h3 class="sous_titre_article">SAVAGES, L’AUTEUR</h3>
+                <p class="texte_article">
                     Fils de marin et de bibliothécaire, il grandit
                     entouré de livres et d’histoires en tous genres
                     dans une petite ville côtière de Rhode Island.
@@ -202,15 +200,15 @@
                     vivre de sa passion pour l’écriture.
                 </p>
             </div>
-            <div>
-                <figure>
+            <div class="huitieme_partie_article2">
+                <figure class="premiere_image__article">
                     <img src="public/img/auteur.jpg" alt="auteur du film">
                     <figcaption>Don Winslow © gointothestory.blcklst.com</figcaption>
                 </figure>
             </div>
-            <div>
-                <h3>Une petite biographie</h3>
-                <p>
+            <div class="neuvieme_partie_article2">
+                <h3 class="sous_titre_article">Une petite biographie</h3>
+                <p class="texte_article">
                     Winslow quitte ses parents à l’âge de 17 ans afin
                     d’étudier le journalisme à l’Université du Nebraska.
                     Il y étudie l’Ethnologie africaine, ce qui lui permet de
@@ -225,7 +223,7 @@
                     en tant que manager d’un cinéma et, plus tard,
                     devient détective privé.
                 </p>
-                <p>
+                <p class="texte_article">
                     Il décide de partir une nouvelle fois dans le but
                     d’obtenir un master en Histoire Militaire et prend la
                     décision de servir à l’étranger. Winslow change
@@ -236,7 +234,7 @@
                     pièces de Shakespeare pendant les étés à Oxford, en
                     Angleterre.
                 </p>
-                <p>
+                <p class="texte_article">
                     Oscillant entre l’Asie, l’Afrique, l’Europe et l’Amérique,
                     Winslow écrit son premier roman : Cirque à Piccadilly
                     fut nominé pour un Edgar Award. Il devint finalement
@@ -249,36 +247,36 @@
                     plus tôt.
                 </p>
             </div>
-            <div>
-                <h3>Bon à savoir</h3>
-                <p>
+            <div class="dixieme_partie_article2">
+                <h3 class="sous_titre_article">Bon à savoir</h3>
+                <p class="texte_article">
                     Winslow écrit une série télévisée avec son ami Shane
                     Salerno, UC/Undercover, et tous les deux ont travaillé
                     sur l’écriture du scénario de son roman Savages.
                 </p>
-                <p>
+                <p class="texte_article">
                     Ses romans ont attiré l’attention de nombreux
                     réalisateurs et acteurs tels qu’Oliver Stone, Michael
                     Mann, Martin Scorsese, Ridley Scott, Robert DeNiro
                     and Leonardo DiCaprio.
                 </p>
-                <p>
+                <p class="texte_article">
                     Twentieth Century Fox lui a réservé son prochain
                     roman à propos d’un policier de la NYPD mais aussi
                     Cartel et La griffe du Chien.
                 </p>
-                <p>
+                <p class="texte_article">
                     Des livres plus anciens comme Savages et Mort et
                     vie de Bobby Z ont aussi été adapté sur grand
                     écran.
                 </p>
-                <p>
+                <p class="texte_article">
                     En plus de ses romans, Winslow a publié de
                     nombreuses nouvelles postées dans des anthologies
                     et dans des magazines tels qu’Esquire, le LA Times
                     Magazine et Playboy.
                 </p>
-                <p>
+                <p class="texte_article">
                     Il possède de nombreux prix dont le Raymond
                     Chandler Award (Italie), le LA Times Book Prize, le
                     Ian Fleming Silver Dagger (Angleterre), le RBA
@@ -288,31 +286,31 @@
             </div>
         </section>
         <section>
-            <div>
-                <h3>LISTE DE SES OEUVRES</h3>
-                <p>
+            <div class="onzieme_partie_article2">
+                <h3 class="sous_titre_article">LISTE DE SES OEUVRES</h3>
+                <p class="texte_italic_article">
                     Liste non exhaustive des romans écrits par notre
                     auteur, Don Winslow.
                 </p>
             </div>
-            <div>
-                <h3>Série Savages</h3>
-                <p>
+            <div class="douzieme_partie_article2">
+                <h3 class="sous_titre_article">Série Savages</h3>
+                <p class="texte_italic_article">
                     Savages, 2011
                     Cool, 2012
                 </p>
-                <h3>Série Frank Decker</h3>
-                <p>
+                <h3 class="sous_titre_article">Série Frank Decker</h3>
+                <p class="texte_italic_article">
                     Missing : New-York, 2015
                     Vengeance, 2017
                 </p>
-                <h3>Série La Griffe du Chien</h3>
-                <p>
+                <h3 class="sous_titre_article">Série La Griffe du Chien</h3>
+                <p class="texte_italic_article">
                     La Griffe du chien, 2007
                     Cartel, 2015
                 </p>
-                <h3>Romans indépendants</h3>
-                <p>
+                <h3 class="sous_titre_article">Romans indépendants</h3>
+                <p class="texte_italic_article">
                     Dernier verre à Manhattan, 2013
                     Mort et vie de Bobby Z, 1998
                     Du feu sous la cendre, 2002
@@ -323,18 +321,18 @@
         </section>
     </main>
 
-    <footer>
-        <div>
-            <a href="#">RETOUR EN HAUT</a>
-            <hr>
+    <footer class="footer">
+        <div class="premiere_partie_footer">
+            <a class="premiere_partie_footer__lien" href="#">RETOUR EN HAUT</a>
+            <hr class="premiere_partie_footer__trait">
         </div>
-        <div>
-            <a href="#">M'ENVOYER UN MAIL</a>
-            <hr>
+        <div class="seconde_partie_footer">
+            <a class="seconde_partie_footer__lien" href="#">M'ENVOYER UN MAIL</a>
+            <hr class="seconde_partie_footer__trait">
         </div>
-        <div>
-            <img src="public/img/mmi_1.jpg" alt="logo du mmi">
-            <p>
+        <div class="troisieme_partie_footer">
+            <img class="troisieme_partie_footer__image" src="public/img/mmi_1.jpg" alt="logo du mmi">
+            <p class="troisieme_partie_footer__texte">
                 Projet réalisé dans le cadre
                 d'un exercice pédagogique
                 au Département MMI de

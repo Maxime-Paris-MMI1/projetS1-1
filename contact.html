@@ -9,32 +9,30 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!--Menu hamburger + titre du site-->
-        <div>
+        <div class="header__titre">
             <h1>
                 <a href="/">Complé(te)ment différents</a>
             </h1>
-        </div>
-        <div>
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar"></span>
-            </button>
-        </div>
+        </div>>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar"></span>
+        </button>
         <!--Menu-->
-        <nav class="menu">
-            <ul>
-                <li><a href="premier_article.html">Savages le film</a></li>
-                <li><a href="troisieme_article.html">Savages le réalisateur</a></li>
-                <li><a href="deuxieme_article.html">Savages le livre</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
+        <nav class="header__menu menu">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="premier_article.html">Savages le film</a></li>
+                <li class="menu__item"><a class="menu__link" href="troisieme_article.html">Savages le réalisateur</a></li>
+                <li class="menu__item"><a class="menu__link" href="deuxieme_article.html">Savages le livre</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <div>
+            <div class="titre__formulaire">
                 <h2>FORMULAIRE DE CONTACT</h2>
             </div>
             <div>
@@ -51,20 +49,20 @@
                     <input class="rectangle__formulaire" id="dernier__rectangle" type="text" id= "Message" required> <br>
                 </form>
             </div>
-            <div>
+            <div class="bouton__envoyer">
                 <h3>ENVOYER</h3>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <a href="#">M'ENVOYER UN MAIL</a>
-            <hr>
+    <footer class="footer">
+        <div class="premiere_partie_pfooter">
+            <a class="premiere_partie_pfooter__lien" href="#">M'ENVOYER UN MAIL</a>
+            <hr class="premiere_partie_pfooter__trait">
         </div>
-        <div>
-            <img src="public/img/mmi_1.jpg" alt="logo du mmi">
-            <p>
+        <div class="seconde_partie_pfooter">
+            <img class="seconde_partie_pfooter__image" src="public/img/mmi_1.jpg" alt="logo du mmi">
+            <p class="seconde_partie_pfooter__texte">
                 Projet réalisé dans le cadre
                 d'un exercice pédagogique
                 au Département MMI de

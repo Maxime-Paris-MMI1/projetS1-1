@@ -9,49 +9,47 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!--Menu hamburger + titre du site-->
-        <div>
+        <div class="header__titre">
             <h1>
                 <a href="/">Complé(te)ment différents</a>
             </h1>
-        </div>
-        <div>
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar"></span>
-            </button>
-        </div>
+        </div>>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar"></span>
+        </button>
         <!--Menu-->
-        <nav class="menu">
-            <ul>
-                <li><a href="premier_article.html">Savages le film</a></li>
-                <li><a href="troisieme_article.html">Savages le réalisateur</a></li>
-                <li><a href="deuxieme_article.html">Savages le livre</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
+        <nav class="header__menu menu">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="premier_article.html">Savages le film</a></li>
+                <li class="menu__item"><a class="menu__link" href="troisieme_article.html">Savages le réalisateur</a></li>
+                <li class="menu__item"><a class="menu__link" href="deuxieme_article.html">Savages le livre</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <div>
-                <h2>SAVAGES, LE RÉALISATEUR</h2>
-                <p>
+            <div class="article_start">
+                <h2 class="article_start__titre">SAVAGES, LE RÉALISATEUR</h2>
+                <p class="article_start__intro">
                     Réalisateur à succès, Oliver Stone n’est
                     certainement pas un nom qui vous est inconnu.
                     Vous avez d’ailleurs probablement déjà vu
                     certains de ses films.
                 </p>
             </div>
-            <figure>
+            <figure class="premiere_image__article">
                 <img src="public/img/livre.jpg" alt="réalisateurdu film">
                 <figcaption>Oliver Stone © parismatch.com</figcaption>
             </figure>
         </section>
         <section>
-            <div>
-                <h3>Son enfance</h3>
-                <p>
+            <div class="premiere_partie_article3">
+                <h3 class="sous_titre_article">Son enfance</h3>
+                <p class="texte_article">
                     Né le 15 septembre 1946 à New York, Oliver Stone
                     est la progéniture d’une famille juive américaine.
                     Son père est un financier de Wall Street (ce qui lui
@@ -62,7 +60,7 @@
                     ses études à Yale et ne termine pas le second
                     semestre.
                 </p>
-                <p>
+                <p class="texte_article">
                     À 21 ans, il est arrêté pour possession de marijuana
                     au Mexique et accusé de trafic ; mais les charges
                     sont ensuite retirées. Suite à cette aventure, il
@@ -70,7 +68,7 @@
                     film. Cela résulte en la réalisation de trois courts
                     métrages. Il obtient son diplôme en 1971.
                 </p>
-                <p>
+                <p class="texte_article">
                     Afin de subvenir à ses besoins durant l’écriture de
                     plusieurs scénarios, Stone devient conducteur de
                     taxi, facteur, vendeur puis assistant de production.
@@ -78,9 +76,9 @@
                     “La Reine du Mal”.
                 </p>
             </div>
-            <div>
-                <h3>Ses années cinéma</h3>
-                <p>
+            <div class="deuxieme_partie_article3">
+                <h3 class="sous_titre_article">Ses années cinéma</h3>
+                <p class="texte_article">
                     Oliver Stone a réalisé et écrit de nombreux films qui
                     n’ont, le plus souvent, rien en commun. Il réalise des
                     films sur des Présidents américains : JFK, Nixon ; un
@@ -93,7 +91,7 @@
                     examiner l’effet qu’a eu le 11 novembre sur les
                     hommes avec le film World Trade Center.
                 </p>
-                <p>
+                <p class="texte_article">
                     Pourtant, il est aussi capable d’écrire des Thrillers
                     ultra violents comme l’Année du Dragon et Scarface
                     et de diriger le très controversé Tueurs Nés.
@@ -102,9 +100,9 @@
                     Cauchemar.
                 </p>
             </div>
-            <div>
-                <h3>Oliver Stone et Savages</h3>
-                <p>
+            <div class="troisieme_partie_article3">
+                <h3 class="sous_titre_article">Oliver Stone et Savages</h3>
+                <p class="texte_article">
                     Les deux facettes de Stone se marient dans Savages,
                     l’adaptation du roman de Don Winslow. Le film nous
                     rappelle le pouvoir des cartels de drogue mexicains
@@ -125,16 +123,16 @@
             </div>
         </section>
         <section>
-            <div>
-                <h3>LISTE DE SES OEUVRES</h3>
-                <p>
+            <div class="fin_article3">
+                <h3 class="sous_titre_article">LISTE DE SES OEUVRES</h3>
+                <p class="texte_italic_article">
                     Liste non exhaustive des films réalisés par notre
                     réalisateur, Oliver Stone.
                 </p>
             </div>
             <div>
-                <h3>De 1974 à 2000</h3>
-                <p>
+                <h3 class="sous_titre_article">De 1974 à 2000</h3>
+                <p class="texte_italic_article">
                     La Reine du mal, 1974
                     La Main du cauchemar, 1981
                     Salvador, 1986
@@ -150,8 +148,8 @@
                     U-Turn, 1997
                     L'Enfer du dimanche, 1999
                 </p>
-                <h3>Depuis 2000</h3>
-                <p>
+                <h3 class="sous_titre_article">Depuis 2000</h3>
+                <p class="texte_italic_article">
                     Alexandre, 2004
                     World Trade Center, 2006
                     W. : L'Improbable Président, 2008
@@ -164,18 +162,18 @@
         </section>
     </main>
 
-    <footer>
-        <div>
-            <a href="#">RETOUR EN HAUT</a>
-            <hr>
+    <footer class="footer">
+        <div class="premiere_partie_footer">
+            <a class="premiere_partie_footer__lien" href="#">RETOUR EN HAUT</a>
+            <hr class="premiere_partie_footer__trait">
         </div>
-        <div>
-            <a href="#">M'ENVOYER UN MAIL</a>
-            <hr>
+        <div class="seconde_partie_footer">
+            <a class="seconde_partie_footer__lien" href="#">M'ENVOYER UN MAIL</a>
+            <hr class="seconde_partie_footer__trait">
         </div>
-        <div>
-            <img src="public/img/mmi_1.jpg" alt="logo du mmi">
-            <p>
+        <div class="troisieme_partie_footer">
+            <img class="troisieme_partie_footer__image" src="public/img/mmi_1.jpg" alt="logo du mmi">
+            <p class="troisieme_partie_footer__texte">
                 Projet réalisé dans le cadre
                 d'un exercice pédagogique
                 au Département MMI de

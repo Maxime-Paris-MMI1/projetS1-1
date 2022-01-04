@@ -9,34 +9,32 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!--Menu hamburger + titre du site-->
-        <div>
+        <div class="header__titre">
             <h1>
                 <a href="/">Complé(te)ment différents</a>
             </h1>
-        </div>
-        <div>
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-                <span class="menu-btn__bar"></span>
-            </button>
-        </div>
+        </div>>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar"></span>
+        </button>
         <!--Menu-->
-        <nav class="menu">
-            <ul>
-                <li><a href="premier_article.html">Savages le film</a></li>
-                <li><a href="troisieme_article.html">Savages le réalisateur</a></li>
-                <li><a href="deuxieme_article.html">Savages le livre</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
+        <nav class="header__menu menu">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link" href="premier_article.html">Savages le film</a></li>
+                <li class="menu__item"><a class="menu__link" href="troisieme_article.html">Savages le réalisateur</a></li>
+                <li class="menu__item"><a class="menu__link" href="deuxieme_article.html">Savages le livre</a></li>
+                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <div>
-                <h2>SAVAGES, LE FILM</h2>
-                <p>
+            <div class="article_start">
+                <h2 class="article_start__titre">SAVAGES, LE FILM</h2>
+                <p class="article_start__intro">
                     Le film Savages a été réalisé par Oliver Stone
                     (Alexandre, Wall Street : l’argent ne dort
                     jamais…) et est sorti le 26 septembre 2012 dans
@@ -45,15 +43,15 @@
                     Don Winslow.
                 </p>
             </div>
-            <figure>
+            <figure class="premiere_image__article">
                 <img src="public/img/3__personnes__couche.jpg" alt="3 personnes couché sur la plage">
                 <figcaption>Ben, Chon et O © Savages, 2012</figcaption>
             </figure>
         </section>
         <section>
-            <div>
-                <h3>Mais alors, ça parle de quoi ?</h3>
-                <p>
+            <div class="premiere_partie_article1">
+                <h3 class="sous_titre_article">Mais alors, ça parle de quoi ?</h3>
+                <p class="texte_article">
                     Ben et Chon, respectivement docteur en
                     botanique et ancien Navy SEAL, sont meilleurs
                     amis. Ensemble, ils produisent de la marijuana ▬ la
@@ -66,9 +64,9 @@
                     petite amie commune.
                 </p>
             </div>
-            <div>
-                <h3>Distribution des rôles</h3>
-                <p>
+            <div class="seconde_partie_article1">
+                <h3 class="sous_titre_article">Distribution des rôles</h3>
+                <p class="texte_article">
                     Aaron Johnson (Kick-Ass, Avengers : Age Of Ultron)
                     interprète Ben, le docteur en botanique idéaliste et
                     pacifiste. Taylor Kitsch (X-Men Origins: Wolverine,
@@ -79,15 +77,15 @@
                     petite amie.
                 </p>
             </div>
-            <div>
-                <img src="public/img/19279_200_2.jpg" alt="appostrophe">
-                <blockquote>
+            <div class="troisieme_partie_article1">
+                <img class="appostrophe" src="public/img/19279_200_2.jpg" alt="appostrophe">
+                <blockquote class="citation">
                     “Les personnages principaux
                     sont donc joués par trois acteurs
                     confirmés, dont les visages sont
                     bien loin de nous être inconnus.”
                 </blockquote>
-                <p>
+                <p class="texte_article">
                     Quant aux personnages secondaires, leurs visages
                     ne nous sont pas non plus étrangers. John Travolta
                     (Grease, Pulp Fiction), Salma Hayek (Bandidas, Ugly
@@ -98,58 +96,60 @@
             </div>
         </section>
         <section>
-            <h3>La réception des critiques</h3>
-            <p>Les critiques du film restent
-                malgré tout partagées. Il
-                obtient une moyenne de
-                52 % pour 186 critiques sur
-                le site Rotten Tomatoes et
-                un score de 59/100 sur le
-                site Metacritic. Pour le
-                Figaroscope, Savages est vu
-                comme une "adaptation
-                réussie du best-seller de
-                Don Winslow" et comme un
-                "trip’ des plus divertissants".
-                Pour certains, le film a permis à Oliver Stone de
-                réaliser son meilleur film depuis longtemps ; tout
-                comme le dit Le Nouvel Observateur. La critique de
-                Studiociné Live reste sans aucun doute celle qui
-                résume le mieux ce qu’en ont pensé les autres
-                magazines. "Si Stone livre un récit à la tension
-                permanente et au style impeccable, sa propension à
-                explorer plusieurs pistes en parallèle rend
-                impossible de connaître son sentiment profond sur
-                le sujet. Vantant les vertus thérapeutiques du
-                cannabis, décrivant la scène d’après les horreurs des
-                cartels mexicains ou faisant le portrait désabusé d’un
-                flic ripou… On pourra toujours louer l’absence
-                d’angélisme de Savages et admirer le talent d’Aaron
-                Johnson." Studiociné a donc octroyé au film la note
-                de 3.75/5.
-            </p>
-            <img src="public/img/pochette__film.jpg" alt="affiche du film">
+            <div class="quatrieme_partie_article1">
+                <h3 class="sous_titre_article">La réception des critiques</h3>
+                <p class="texte_article">Les critiques du film restent
+                    malgré tout partagées. Il
+                    obtient une moyenne de
+                    52 % pour 186 critiques sur
+                    le site Rotten Tomatoes et
+                    un score de 59/100 sur le
+                    site Metacritic. Pour le
+                    Figaroscope, Savages est vu
+                    comme une "adaptation
+                    réussie du best-seller de
+                    Don Winslow" et comme un
+                    "trip’ des plus divertissants".
+                    Pour certains, le film a permis à Oliver Stone de
+                    réaliser son meilleur film depuis longtemps ; tout
+                    comme le dit Le Nouvel Observateur. La critique de
+                    Studiociné Live reste sans aucun doute celle qui
+                    résume le mieux ce qu’en ont pensé les autres
+                    magazines. "Si Stone livre un récit à la tension
+                    permanente et au style impeccable, sa propension à
+                    explorer plusieurs pistes en parallèle rend
+                    impossible de connaître son sentiment profond sur
+                    le sujet. Vantant les vertus thérapeutiques du
+                    cannabis, décrivant la scène d’après les horreurs des
+                    cartels mexicains ou faisant le portrait désabusé d’un
+                    flic ripou… On pourra toujours louer l’absence
+                    d’angélisme de Savages et admirer le talent d’Aaron
+                    Johnson." Studiociné a donc octroyé au film la note
+                    de 3.75/5.
+                </p>
+                <img class="affiche_film" src="public/img/pochette__film.jpg" alt="affiche du film">
+            </div>
         </section>
         <section>
-            <h2>La bande annonce</h2>
-            <figure>
+            <h3 class="sous_titre_article">La bande annonce</h3>
+            <figure class="block_bande_annonce__image">
                 <img src="public/img/bande__annonce.jpg" alt="image bande annonce">
                 <figcaption>© Caroline Chambre</figcaption>
             </figure>
         </section>
     </main>
-    <footer>
-        <div>
-            <a href="#">RETOUR EN HAUT</a>
-            <hr>
+    <footer class="footer">
+        <div class="premiere_partie_footer">
+            <a class="premiere_partie_footer__lien" href="#">RETOUR EN HAUT</a>
+            <hr class="premiere_partie_footer__trait">
         </div>
-        <div>
-            <a href="#">M'ENVOYER UN MAIL</a>
-            <hr>
+        <div class="seconde_partie_footer">
+            <a class="seconde_partie_footer__lien" href="#">M'ENVOYER UN MAIL</a>
+            <hr class="seconde_partie_footer__trait">
         </div>
-        <div>
-            <img src="public/img/mmi_1.jpg" alt="logo du mmi">
-            <p>
+        <div class="troisieme_partie_footer">
+            <img class="troisieme_partie_footer__image" src="public/img/mmi_1.jpg" alt="logo du mmi">
+            <p class="troisieme_partie_footer__texte">
                 Projet réalisé dans le cadre
                 d'un exercice pédagogique
                 au Département MMI de
