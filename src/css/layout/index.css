@@ -247,3 +247,39 @@
 .block_bande_annonce__image{
 
 }
+
+/* Carousel */
+
+.carousel {
+	grid-column: 2;
+	grid-row: 2;
+	width: 266px;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+    margin-left: 15px;
+}
+
+.droite1 {
+	grid-row: 2;
+	grid-column: 1;
+	width: 40px;
+}
+
+.images1{
+	width: 6600px;
+	height: 167px;
+	left:0;
+}
+
+.images1 img {
+	width: 266px;
+	height: 167px;
+}
+
+.image__carousel {
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+}

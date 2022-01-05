@@ -7,6 +7,8 @@
     <title>Complé(te)ment différents</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 <body x-data="{ atTop: true }">
     <header class="header">
@@ -92,13 +94,24 @@
         </div>
         <div class="block_bande_annonce">
             <h3 class="block_bande_annonce__titre">La réplique de <i class="weight">Savages</i></h3>
-            <figure class="block_bande_annonce__image">
-                <img src="public/img/bande__annonce.jpg" alt="image bande annonce">
+            <figure >
+                <div class="droite1">&nbsp;</div>
+			        <div class="carousel">
+				        <div class="images1">
+                            <img id="img1" class="image__carousel" src="public/img/bande__annonce.jpg" alt="image bande annonce">
+                            <img id="img2" class="image__carousel" src="public/img/image_2_carrousel.jpg" alt="2 homme avec des masques">
+                            <img id="img3" class="image__carousel" src="public/img/image_3_carrousel.jpg" alt="affiche du film">
+                            <img id="img4" class="image__carousel" src="public/img/image_4_carroussel.jpg" alt="homme fixant quelque chose">
+                        </div>
+                    </div>
+                    <script>
+			
+                        carousel();
+                        
+                    </script>
                 <figcaption class="block_troisieme_article_figcaption">© Caroline Chambre</figcaption>
             </figure>
-            <img src="public/img/image_2_carrousel.jpg" alt="2 homme avec des masques">
-            <img src="public/img/image_3_carrousel.jpg" alt="affiche du film">
-            <img src="public/img/image_4_carroussel.jpg" alt="homme fixant quelque chose">
+            
         </div>
     </main>
     <footer class="footer">
