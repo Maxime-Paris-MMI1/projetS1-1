@@ -7,6 +7,8 @@
     <title>Complé(te)ment différents</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 <body x-data="{ atTop: true }">
     <header class="header">
@@ -44,10 +46,17 @@
                     certains de ses films.
                 </p>
             </div>
-            <figure class="premiere_image__article">
-                <img src="public/img/livre.jpg" alt="réalisateurdu film">
-                <figcaption class="figcaption">Oliver Stone © parismatch.com</figcaption>
-            </figure>
+
+            <div class="visionneuse">
+                <figure class="premiere_image__article"
+                        x-on:mouseover="monterLegende('capt1');"
+                        x-on:mouseleave="descendreLegende();">
+                    <img src="public/img/livre.jpg" alt="réalisateurdu film">
+                    <figcaption class="figcaption legende__texte capt1">Oliver Stone © parismatch.com</figcaption>
+                </figure>
+            </div>
+
+
         </section>
         <section>
             <div class="premiere_partie_article3">

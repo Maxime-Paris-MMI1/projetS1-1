@@ -37,15 +37,15 @@ function carousel() {
 }
 
 
-function monterLegende() {
-    document.querySelector('.legende__texte').style.display ='block';
+function monterLegende(c) {
+    document.querySelector('.'+c).style.display ='block';
     return anime({
-        targets: '.legende__texte',
+        targets: '.'+c,
         translateY: '-3em',
         autoplay:false,
         easing:'linear',
         duration: 200
-    }).play
+    }).play;
 
 }
 
@@ -57,6 +57,6 @@ function descendreLegende() {
         autoplay:true,
         easing:'linear',
         duration: 200
-    }).play
+    }).play;
 	
 }

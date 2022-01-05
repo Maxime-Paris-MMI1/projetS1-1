@@ -37,16 +37,34 @@
     </header>
     <main>
         <div class="accueil_start">
-            <img class="accueil_start__image" id="haut" src="public/img/image__accueil.jpg" alt="image d'un homme masqué">
+
+        <!--animation premiere image (changement lors du click)-->
+
+        <div x-data="{picture:true}">
+            <div x-on:click="picture ? picture=false : picture=true;">
+                <img x-show="picture" class="accueil_start__image" id="haut" src="public/img/image__accueil.jpg" alt="image d'un homme masqué">
+
+            </div>
+            <div x-on:click="picture ? picture=false : picture=true;">
+                <img x-show="!picture" class="accueil_start__image" id="haut" src="public/img/homme__page__accueil.jpg" alt="image d'un homme">
+
+            </div>
+        </div>
+        <!--fin animation premiere image (changement lors du click)-->
+
             <h2 class="accueil_start__titre" id="texte_haut">« Grow up, Ben. You can’t change the world, it changes you. »</h2>
+
+        <!--animation de la legende lors du mouseover-->
             <div class="visionneuse">
                     <figure class="accueil_start__image" id="bas"
-                            x-on:mouseover="monterLegende();"
+                            x-on:mouseover="monterLegende('capt1');"
                             x-on:mouseleave="descendreLegende()">
                         <img src="public/img/homme__page__accueil.jpg" alt="gros plan sur un personnage du film">
-                        <figcaption class="legende__texte plm__texte">Chon © Savages, 2012</figcaption>
+                        <figcaption class="legende__texte plm__texte capt1">Chon © Savages, 2012</figcaption>
                     </figure>
             </div>
+        <!--fin animation de la legende lors du mouseover-->
+
             <h2 class="accueil_start__titre" id="texte_bas">« Grandis, Ben. Tu ne peux pas changer le monde, c'est lui qui te changera. »</h2>
         </div>
         <div class="block_introduction">

@@ -11,6 +11,7 @@
     background-color: var(--noir);
     transform: translateX(100%);
     transition: all .4s ease-in-out;
+    z-index: 2;
   }
 
   /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */

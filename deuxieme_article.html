@@ -7,6 +7,8 @@
     <title>Complé(te)ment différents</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
 </head>
 <body x-data="{ atTop: true }">
     <header class="header">
@@ -46,10 +48,17 @@
                     racontant le passé des trois protagonistes
                 </p>
             </div>
-            <figure class="premiere_image__article">
-                <img src="public/img/2__homme__qui__discute.jpg" alt="2 homme qui discutent à la plage">
-                <figcaption class="figcaption">Ben, Chon © Savages, 2012</figcaption>
-            </figure>
+
+            <div class="visionneuse">
+                <figure class="premiere_image__article"
+                        x-on:mouseover="monterLegende('capt1');"
+                        x-on:mouseleave="descendreLegende();">
+                    <img src="public/img/2__homme__qui__discute.jpg" alt="2 homme qui discutent à la plage">
+                    <figcaption class="figcaption legende__texte capt1">Ben, Chon © Savages, 2012</figcaption>
+                </figure>
+            </div>
+
+
         </section>
         <section>
             <div class="premiere_partie_article2">
@@ -204,10 +213,17 @@
                 </p>
             </div>
             <div class="huitieme_partie_article2">
-                <figure class="premiere_image__article">
-                    <img src="public/img/auteur.jpg" alt="auteur du film">
-                    <figcaption class="figcaption">Don Winslow © gointothestory.blcklst.com</figcaption>
-                </figure>
+
+                <div class="visionneuse">
+                    <figure class="premiere_image__article"
+                            x-on:mouseover="monterLegende('capt2');"
+                            x-on:mouseleave="descendreLegende();">
+                        <img src="public/img/auteur.jpg" alt="auteur du film">
+                        <figcaption class="figcaption legende__texte capt2">Don Winslow © gointothestory.blcklst.com</figcaption>
+                    </figure>
+                </div>
+
+
             </div>
             <div class="neuvieme_partie_article2">
                 <h3 class="sous_titre_article">Une petite biographie</h3>
