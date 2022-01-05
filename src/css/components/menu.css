@@ -21,19 +21,96 @@
 }
 
 /* Mise en forme des éléments du menu */
-.menu__list {
-  margin-top: 25vh;
-  margin-left: 15vw;
+.nav{
+  left: 32px;
+}
+
+.titre{
+  left: 22px;
+  margin-top: 20px;
+}
+
+.image__menu{
+  filter: blur(1px);
+  opacity:90%;
+  display: block;
+  position: relative;
+  right:70px;
+  margin-top: -40px;
+}
+.titre_menu{
+  display: block;
+  position: absolute;
+  left: 130px;
+  width: 30vw;
+  background-position: center;
 }
 
 .menu__item {
   margin-top: 15%;
-}
+} 
 
 .menu__link {
   color: var(--blanc-maquette);
   text-decoration: none;
+  display: flex;
+  align-content: center;
+  font-family: var(--font-open-sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--blanc-maquette);
+  justify-content: center;
+
 }
+
+.menu__link2{
+  font-family: var(--font-open-sans);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--blanc-maquette);
+  text-decoration: none;
+  display: flex;
+  align-content: space-between;
+  margin-top: -80px;
+  
+}
+
+.placement{
+  background-image: url(../../../public/img/Contact.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 60px;
+}
+
+.placement1{
+  background-image: url(../../../public/img/Information.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 60px;
+  margin-left: 180px;
+  margin-top: -200px;
+  margin-right: 60px;
+
+}
+
+.barre__menu{
+  background: var(--couleur-typographie);
+  width: 296px;
+  height: 1px;
+  border: none;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
 
 
 /* Mise en forme du bouton de menu "Hamburger" */
