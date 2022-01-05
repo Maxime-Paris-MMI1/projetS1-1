@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,33 @@
     <script src="https://animejs.com/lib/anime.min.js"></script>
     <script src="src/js/fonctions.js"></script>
 </head>
+
 <body x-data="{ atTop: true }">
     <header class="header">
         <!--Menu hamburger + titre du site-->
         <h1 class="titre_header"><a class="header__titre__lien" href="/">Complé(te)ment différents</a></h1>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                @pointerdown="menuIsOpen = !menuIsOpen" 
-                :class="menuIsOpen && 'menu-btn--open'">
-          <span class="menu-btn__bar"></span>
-          <span class="menu-btn__round"></span>
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            <span class="menu-btn__round"></span>
         </button>
         <!--Menu-->
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <a class="header__titre__lien titre" href="/">Complé(te)ment différents</a>
                 <p class="header__titre__lien nav">Navigation</p>
-                <hr class="barre__menu">     
-                <li class="menu__item"><a class="menu__link" href="premier_article.html"><img class="image__menu" src="public/img/premier_article__accueil.jpg" alt="image representant le premier article"> <span class="titre_menu">Savages le film</span></a></li>
-                <li class="menu__item"><a class="menu__link" href="troisieme_article.html"><img class="image__menu" src="public/img/deuxieme_article__accueil.jpg" alt="image representant le deuxieme_article"><span class="titre_menu">Savages le réalisateur</span></a></li>
-                <li class="menu__item"><a class="menu__link" href="deuxieme_article.html"><img class="image__menu" src="public/img/troisieme_article__accueil.jpg" alt="image representant le troisieme_article"><span class="titre_menu">Savages le livre</span></a></li>
+                <hr class="barre__menu">
+                <li class="menu__item"><a class="menu__link" href="premier_article.html"><img class="image__menu"
+                            src="public/img/premier_article__accueil.jpg" alt="image representant le premier article">
+                        <span class="titre_menu">Savages le film</span></a></li>
+                <li class="menu__item"><a class="menu__link" href="troisieme_article.html"><img class="image__menu"
+                            src="public/img/deuxieme_article__accueil.jpg"
+                            alt="image representant le deuxieme_article"><span class="titre_menu">Savages le
+                            réalisateur</span></a></li>
+                <li class="menu__item"><a class="menu__link" href="deuxieme_article.html"><img class="image__menu"
+                            src="public/img/troisieme_article__accueil.jpg"
+                            alt="image representant le troisieme_article"><span class="titre_menu">Savages le
+                            livre</span></a></li>
                 <hr class="barre__menu">
                 <li class="menu__item"><a class="menu__link2 placement" href="contact.html">Contact</a></li>
                 <li class="menu__item"><a class="menu__link2 placement1" href="a_propos.html">À propos</a></li>
@@ -38,34 +47,37 @@
     <main>
         <div class="accueil_start">
 
-        <!--animation premiere image (changement lors du click)-->
+            <!--animation premiere image (changement lors du click)-->
+            <h2 class="accueil_start__titre" id="texte_haut">« Grow up, Ben. You can’t change the world, it changes you.
+                »</h2>
 
-        <div x-data="{picture:true}">
-            <div x-on:click="picture ? picture=false : picture=true;">
-                <img x-show="picture" class="accueil_start__image" id="haut" src="public/img/image__accueil.jpg" alt="image d'un homme masqué">
+            <div x-data="{picture:true}">
+                <div x-on:click="picture ? picture=false : picture=true;">
+                    <img x-show="picture" class="accueil_start__image" id="haut" src="public/img/image__accueil.jpg"
+                        alt="image d'un homme masqué">
 
+                </div>
+                <div x-on:click="picture ? picture=false : picture=true;">
+                    <img x-show="!picture" class="accueil_start__image" id="haut"
+                        src="public/img/homme__page__accueil.jpg" alt="image d'un homme">
+
+                </div>
             </div>
-            <div x-on:click="picture ? picture=false : picture=true;">
-                <img x-show="!picture" class="accueil_start__image" id="haut" src="public/img/homme__page__accueil.jpg" alt="image d'un homme">
+            <!--fin animation premiere image (changement lors du click)-->
 
-            </div>
-        </div>
-        <!--fin animation premiere image (changement lors du click)-->
 
-            <h2 class="accueil_start__titre" id="texte_haut">« Grow up, Ben. You can’t change the world, it changes you. »</h2>
-
-        <!--animation de la legende lors du mouseover-->
+            <!--animation de la legende lors du mouseover-->
             <div class="visionneuse">
-                    <figure class="accueil_start__image" id="bas"
-                            x-on:mouseover="monterLegende('capt1');"
-                            x-on:mouseleave="descendreLegende()">
-                        <img src="public/img/homme__page__accueil.jpg" alt="gros plan sur un personnage du film">
-                        <figcaption class="legende__texte plm__texte capt1">Chon © Savages, 2012</figcaption>
-                    </figure>
+                <figure class="accueil_start__image" id="bas" x-on:mouseover="monterLegende('capt1');"
+                    x-on:mouseleave="descendreLegende()">
+                    <img src="public/img/homme__page__accueil.jpg" alt="gros plan sur un personnage du film">
+                    <figcaption class="legende__texte plm__texte capt1">Chon © Savages, 2012</figcaption>
+                </figure>
             </div>
-        <!--fin animation de la legende lors du mouseover-->
+            <!--fin animation de la legende lors du mouseover-->
 
-            <h2 class="accueil_start__titre" id="texte_bas">« Grandis, Ben. Tu ne peux pas changer le monde, c'est lui qui te changera. »</h2>
+            <h2 class="accueil_start__titre" id="texte_bas">« Grandis, Ben. Tu ne peux pas changer le monde, c'est lui
+                qui te changera. »</h2>
         </div>
         <div class="block_introduction">
             <img class="block_introduction__image" src="public/img/feuillecanabis.svg" alt="feuille de cannabis">
@@ -81,7 +93,8 @@
         </div>
         <div class="block_article">
             <div class="block_premier_article">
-                <img class="block_premier_article__image" src="public/img/premier_article__accueil.jpg" alt="image représentant le premier article">
+                <img class="block_premier_article__image" src="public/img/premier_article__accueil.jpg"
+                    alt="image représentant le premier article">
                 <a class="block_premier_article__lien" href="premier_article.html">Le film</a>
                 <p class="block_premier_article__texte">Le film Savages est un
                     thriller centré autour du
@@ -90,7 +103,8 @@
                 </p>
             </div>
             <div class="block_deuxieme_article">
-                <img class="block_deuxieme_article__image" src="public/img/deuxieme_article__accueil.jpg" alt="image représentantle deuxième article">
+                <img class="block_deuxieme_article__image" src="public/img/deuxieme_article__accueil.jpg"
+                    alt="image représentantle deuxième article">
                 <a class="block_deuxieme_article__lien" href="troisieme_article.html">Le réalisateur</a>
                 <p class="block_deuxieme_article__texte">
                     Oliver Stone est un
@@ -100,7 +114,8 @@
                 </p>
             </div>
             <div class="block_troisieme_article">
-                <img class="block_troisieme_article__image" src="public/img/troisieme_article__accueil.jpg" alt="image représentantle troisième article">
+                <img class="block_troisieme_article__image" src="public/img/troisieme_article__accueil.jpg"
+                    alt="image représentantle troisième article">
                 <a class="block_troisieme_article__lien" href="deuxieme_article.html">Le livre</a>
                 <p class="block_troisieme_article__texte">
                     Ce roman a été publié en
@@ -115,24 +130,28 @@
         </div>
         <div class="block_bande_annonce">
             <h3 class="block_bande_annonce__titre">La réplique de <i class="weight">Savages</i></h3>
-            <figure >
+            <figure>
                 <div class="droite1">&nbsp;</div>
-			        <div class="carousel">
-				        <div class="images1">
-                            <img id="img1" class="image__carousel" src="public/img/bande__annonce.jpg" alt="image bande annonce">
-                            <img id="img2" class="image__carousel" src="public/img/image_2_carrousel.jpg" alt="2 homme avec des masques">
-                            <img id="img3" class="image__carousel" src="public/img/image_3_carrousel.jpg" alt="affiche du film">
-                            <img id="img4" class="image__carousel" src="public/img/image_4_carroussel.jpg" alt="homme fixant quelque chose">
-                        </div>
+                <div class="carousel">
+                    <div class="images1">
+                        <img id="img1" class="image__carousel" src="public/img/bande__annonce.jpg"
+                            alt="image bande annonce">
+                        <img id="img2" class="image__carousel" src="public/img/image_2_carrousel.jpg"
+                            alt="2 homme avec des masques">
+                        <img id="img3" class="image__carousel" src="public/img/image_3_carrousel.jpg"
+                            alt="affiche du film">
+                        <img id="img4" class="image__carousel" src="public/img/image_4_carroussel.jpg"
+                            alt="homme fixant quelque chose">
                     </div>
-                    <script>
-			
-                        carousel();
-                        
-                    </script>
+                </div>
+                <script>
+
+                    carousel();
+
+                </script>
                 <figcaption class="block_troisieme_article_figcaption">© Caroline Chambre</figcaption>
             </figure>
-            
+
         </div>
     </main>
     <footer class="footer">
@@ -154,6 +173,7 @@
             </p>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
