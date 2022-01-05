@@ -1,5 +1,9 @@
 header{
     background-color: var(--noir);
+    padding-top: 11px;
+    display: flex;
+    justify-content: space-between;
+
 
 
 }

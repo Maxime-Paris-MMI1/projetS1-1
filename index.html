@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
-<body>
+<body x-data="{ atTop: true }">
     <header class="header">
         <!--Menu hamburger + titre du site-->
         <h1 class="titre_header"><a class="header__titre__lien" href="/">Complé(te)ment différents</a></h1>
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-btn__bar"></span>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+          <span class="menu-btn__bar"></span>
+          <span class="menu-btn__round"></span>
         </button>
         <!--Menu-->
-        <nav class="header__menu menu">
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <li class="menu__item"><a class="menu__link" href="premier_article.html">Savages le film</a></li>
                 <li class="menu__item"><a class="menu__link" href="troisieme_article.html">Savages le réalisateur</a></li>

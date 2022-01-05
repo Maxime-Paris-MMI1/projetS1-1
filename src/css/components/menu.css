@@ -1,11 +1,139 @@
 .menu {
     visibility: hidden;
     opacity: 0;
+    overflow: hidden;
     position: fixed;
+    display: 	flex;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: var(--noir);
     transform: translateX(100%);
-    transition: all .8s ease;
+    transition: all .4s ease-in-out;
   }
+
+  /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
+.menu--open {
+  visibility: visible;
+  transform: none;
+  opacity: 1;
+}
+
+/* Mise en forme des éléments du menu */
+.menu__list {
+  margin-top: 25vh;
+  margin-left: 15vw;
+}
+
+.menu__item {
+  margin-top: 15%;
+}
+
+.menu__link {
+  color: var(--blanc-maquette);
+  text-decoration: none;
+}
+
+
+/* Mise en forme du bouton de menu "Hamburger" */
+.menu-btn {
+  position: relative;
+  width: 32px;
+  margin-top: -15px;
+  margin-right: 17px;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+  content: '';
+  background: var(--blanc-maquette);
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  transition: all .4s ease-in-out;
+}
+
+.menu-btn__round,
+.menu-btn__round::before,
+.menu-btn__round::after {
+  content: '';
+  background: var(--blanc-maquette);
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+  left: 35px;
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: 10;
+  transition: all .4s ease-in-out;
+
+}
+
+.menu-btn__round::before{
+  margin-left: -25px;
+
+}
+
+.menu-btn__round::after{
+  margin-left: -45px;
+
+}
+
+.menu-btn__bar::before {
+  top: -10px;
+}
+
+.menu-btn__bar::after {
+  top: 10px;
+}
+
+.menu__start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 80vh;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+  background-color: var(--blanc-maquette);
+}
+
+.menu-btn--open .menu-btn__round,
+.menu-btn--open .menu-btn__round::before,
+.menu-btn--open .menu-btn__round::after {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
