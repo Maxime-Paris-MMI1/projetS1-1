@@ -1,0 +1,38 @@
+.bouton{
+    background-image: url(../../../public/img/rectangle.svg);
+    color: var(--blanc-maquette);
+    padding: 30px;
+    margin-top: 5vh;
+    margin-left: 100px;
+}
+
+
+.position{
+    text-align: center;
+
+}
+
+
+.rectangle__form{
+    border-radius: 4px;
+    border-color: var(--rouge);
+}
+.list__404__{
+    text-decoration: none;
+    color: var(--noir);
+    font-family: var(--font-open-sans);
+    border: solid;
+    color: var(--rouge);
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-right: 30vw;
+    padding-left: 30vw;
+    margin-right: 10vw;
+    margin-left: 10vw;
+
+}

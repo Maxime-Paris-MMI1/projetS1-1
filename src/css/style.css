@@ -11,6 +11,7 @@
 @import url("base/main.css");
 
 /* Layout */
+@import url("layout/404.css");
 @import url("layout/a_propos.css");
 @import url("layout/articles.css");
 @import url("layout/contact.css");

@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 <title>404 - Page Non trouvée</title>
-<h1>Page Non trouvée</h1>
+<link rel="stylesheet" href="src/css/style.css">
+<h1 class="header__titre__lien position">Page Non trouvée</h1>
 <form action="https://duckduckgo.com/" method="GET" 
     x-data="{ q:'', }" 
     x-on:submit="q = q + ' site:mmimontbeliard.com'">
-    <label for="q">Text à chercher :</label>
-    <input type="text" id="q" name="q" x-model="q">
-    <button type="submit">Rechercher</button>
+    <label class="sous_titre_article" for="q">Texte à chercher :</label>
+    <input class="rectangle__form" type="text" id="q" name="q" x-model="q"> <br>
+    <button class="sous_titre_article position bouton" type="submit">Rechercher</button>
 </form>
+<h2>Ou sinon n'hésitez pas à voir aussi:</h2>
+<ul class="list-unstyled">
+    <li><a class="list__404__"  href="a_propos.html">À propos</a> </li>
+    <li><a class="list__404__" href="contact.html">Contact</a></li>
+    <li><a class="list__404__" href="deuxieme_article.html">Le livre</a></li>
+    <li><a class="list__404__" href="premier_article.html">Le film</a></li>
+    <li><a class="list__404__" href="troisieme_article.html">Le réalisateur</a></li>
+    <li><a class="list__404__" href="index.html">page d'accueil</a></li>
+</ul>
